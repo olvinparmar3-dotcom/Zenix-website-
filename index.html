@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="Zenix — Powerful. Secure. Built for Discord.">
+  <title>Zenix — Discord Bot</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #090b12;
+      color: white;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    nav {
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8%;
+      border-bottom: 1px solid #202230;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #a77bff;
+    }
+
+    nav a {
+      color: #c5c5d0;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px 90px;
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid #7544d8;
+      color: #b99aff;
+      border-radius: 30px;
+      padding: 9px 17px;
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 75px);
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #9b6cff;
+    }
+
+    .subtitle {
+      color: #a5a7b5;
+      font-size: 17px;
+      line-height: 1.7;
+      max-width: 550px;
+      margin: auto;
+    }
+
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 13px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 15px 25px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .primary {
+      background: #7544d8;
+      color: white;
+    }
+
+    .secondary {
+      border: 1px solid #353546;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      opacity: 0.85;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .stat {
+      background: #141622;
+      border: 1px solid #242638;
+      border-radius: 13px;
+      padding: 27px;
+      width: 190px;
+      text-align: center;
+    }
+
+    .stat h2 {
+      color: #a77bff;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .stat p {
+      color: #a5a7b5;
+      font-size: 13px;
+    }
+
+    .features {
+      padding: 85px 8%;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .features > p {
+      color: #a5a7b5;
+      margin-bottom: 35px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .feature {
+      background: #141622;
+      border: 1px solid #242638;
+      border-radius: 13px;
+      padding: 27px;
+      text-align: left;
+    }
+
+    .feature h3 {
+      margin-bottom: 12px;
+      color: #b99aff;
+    }
+
+    .feature p {
+      color: #a5a7b5;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    footer {
+      border-top: 1px solid #202230;
+      padding: 30px 15px;
+      text-align: center;
+      color: #777989;
+      font-size: 13px;
+    }
+
+    @media(max-width: 600px) {
+      nav {
+        padding: 0 5%;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding-top: 90px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">ZENIX</div>
+    <div>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="tag">DISCORD BOT • NEXT GENERATION</div>
+
+    <h1>Your server.<br><span>Upgraded.</span></h1>
+
+    <p class="subtitle">
+      Meet Zenix — a powerful Discord bot designed
+      to make your server management easier,
+      smarter and more secure.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#" id="invite">
+        Add Zenix to Discord
+      </a>
+
+      <a class="btn secondary" href="#features">
+        Explore Features
+      </a>
+    </div>
+  </section>
+
+  <section class="stats" id="about">
+    <div class="stat">
+      <h2>150+</h2>
+      <p>Commands planned</p>
+    </div>
+
+    <div class="stat">
+      <h2>24/7</h2>
+      <p>Availability goal</p>
+    </div>
+
+    <div class="stat">
+      <h2>Secure</h2>
+      <p>Built with security in mind</p>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Everything you need.</h2>
+    <p>Powerful tools for your Discord community.</p>
+
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Moderation</h3>
+        <p>Tools to help keep your server organized and manageable.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Automation</h3>
+        <p>Useful commands and automated server tasks.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Utility</h3>
+        <p>Helpful tools designed for everyday Discord use.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Protection</h3>
+        <p>Security-focused features for your community.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Zenix. All rights reserved.<br><br>
+    Powerful. Secure. Built for Discord.
+  </footer>
+
+  <script>
+    // Add your official Discord bot invite URL here.
+    const INVITE_URL = "";
+
+    document.getElementById("invite").addEventListener("click", function(event) {
+      if (!INVITE_URL) {
+        event.preventDefault();
+        alert("Zenix invite link coming soon!");
+        return;
+      }
+
+      this.href = INVITE_URL;
+    });
+  </script>
+
+</body>
+</html>
